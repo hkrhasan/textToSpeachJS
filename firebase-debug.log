@@ -1,0 +1,55 @@
+[debug] [2020-01-24T03:56:25.914Z] ----------------------------------------------------------------------
+[debug] [2020-01-24T03:56:25.920Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hkr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-01-24T03:56:25.921Z] CLI Version:   7.12.1
+[debug] [2020-01-24T03:56:25.921Z] Platform:      win32
+[debug] [2020-01-24T03:56:25.921Z] Node Version:  v12.14.0
+[debug] [2020-01-24T03:56:25.924Z] Time:          Fri Jan 24 2020 09:26:25 GMT+0530 (India Standard Time)
+[debug] [2020-01-24T03:56:25.924Z] ----------------------------------------------------------------------
+[debug] [2020-01-24T03:56:25.925Z] 
+[debug] [2020-01-24T03:56:25.963Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-24T03:56:25.964Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hkr\Desktop\text to speach
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2020-01-24T03:58:10.820Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-24T03:58:10.821Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-24T03:58:11.089Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-24T03:58:11.129Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2020-01-24T03:58:12.933Z] <<< HTTP RESPONSE 400
+[debug] [2020-01-24T03:58:12.934Z] <<< HTTP RESPONSE BODY
+[debug] [2020-01-24T03:58:12.937Z] HTTP Error: 400, Request contains an invalid argument.
+[debug] [2020-01-24T03:58:13.170Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at module.exports (C:\Users\hkr\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\hkr\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:39:35)
+    at Request.self.callback (C:\Users\hkr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (C:\Users\hkr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (C:\Users\hkr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
